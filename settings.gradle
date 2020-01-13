@@ -1,0 +1,3 @@
+rootProject.name = 'Common'
+include 'common'
+findProject(':common')?.name = 'ilapin.common'
