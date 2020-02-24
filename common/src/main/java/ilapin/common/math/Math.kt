@@ -7,3 +7,11 @@ fun lerp(a: Float, b: Float, amount: Float): Float {
 fun inverseLerp(min: Float, max: Float, value: Float): Float {
     return (value - min) / (max - min)
 }
+
+fun clamp(min: Float, max: Float, value: Float): Float {
+    return when {
+        value < min -> min
+        value > max -> max
+        else -> value
+    }
+}
